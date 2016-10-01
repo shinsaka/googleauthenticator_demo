@@ -13,9 +13,17 @@
 
 <body>
   <h1>Google authenticate demo</h1>
-  <p>1. 下記のQRコードを読取り、Google認証システムへ登録してください</p>
-  <img src="data:image/png;base64,{{ request.session.img }}" alt="qrcode"/>
-  <p>2. Google認証システムに下記のコードが表示されているはずです</p>
-  <div id="otp_code" style="padding: 0.5em;font-size: 4em;"></div>
+  <!-- Secret:{{ request.session.secret }} -->
+  <div>
+    <p>1. 下記のQRコードを読取り、Google認証システムへ登録してください<br />
+       Open the Google Authenticator app and scan the barcode below:</p>
+    <img src="data:image/png;base64,{{ request.session.img }}" alt="qrcode" width="200"/>
+  </div>
+
+  <div>
+    <p>2. Google認証システムに下記のコードが表示されているはずです<br />
+       Once you have scanned the barcode, you can the following 6 digits otp-code.</p>
+  </div>
+  <div id="otp_code" style="padding: 0 0.5em;font-size: 3em;"></div>
 </body>
 </html>
