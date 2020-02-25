@@ -11,6 +11,8 @@ dj-database-url = "*"
 qrcode = "*"
 onetimepass = "*"
 psycopg2 = "*"
+gunicorn = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.8"
