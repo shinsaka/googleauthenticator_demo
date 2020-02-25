@@ -10,6 +10,7 @@ django = "*"
 dj-database-url = "*"
 qrcode = "*"
 onetimepass = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.8"
