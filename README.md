@@ -27,3 +27,14 @@ heroku logs --app gauth-demo -t
 heroku apps:destroy --app gauth-demo
 ```
 
+# How to run on local(Ubuntu)
+
+- require pipenv
+
+```
+sudo apt install libpq-dev
+pipenv install
+python manage.py migrate
+heroku local
+```
+
