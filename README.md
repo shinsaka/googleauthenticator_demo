@@ -1,6 +1,6 @@
 # Google Authoenticator demo
-- Django 3.0.7
-- Python 3.8.3
+- Django 3.x
+- Python 3.8
 
 # How to run on Heroku
 - assuming appname is `gauth-demo`
